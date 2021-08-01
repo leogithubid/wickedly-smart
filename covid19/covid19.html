@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COVID-19 Visualisation</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="./graphData.js"></script>
+        <script>
+            window.onload = function(){
+                readData("covid19.csv","#graph");
+            }
+        </script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1>COVID-19 Visualisation</h1>
+        <div id="graph"></div>
+        <div class="tooltip"></div>
+    </body>
+</html>
