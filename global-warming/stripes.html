@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <!-- First create a local server with Python using 
+         python3 -m http.server-->
+    <head>    
+        <title>Global Warming Visualisation</title>
+        <!-- Link D3.js library for data visualisation -->
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="./stripes.js"></script>
+        <script>
+            window.onload = function(){
+                //Call JS function here
+                readData("GLB.Ts.csv","#land");
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Global Warming Visualisation (1880-2018)</h2>
+        <div id="land"></div>
+    </body>
+</html>
